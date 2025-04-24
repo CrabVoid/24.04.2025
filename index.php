@@ -9,6 +9,21 @@
 
 <body>
 
+    <?php
+    $settings = array(
+        "Theme" => "Dark",
+        "Font" => "Arial"
+    );
+
+    echo "<ul>";
+    foreach ($settings as $x => $value) {
+        echo "<li>$x => $value <br>";
+    }
+    echo "</ul>";
+
+
+    ?>
+
 </body>
 
 </html>

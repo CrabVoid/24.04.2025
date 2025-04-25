@@ -1,4 +1,5 @@
 <?php
+
 class Auto
 {
     public $marka;
@@ -11,17 +12,16 @@ class Auto
         $this->modelis = $modelis;
         $this->gads = $gads;
     }
-    public function showInfo()
+
+    public function showinfo()
     {
         return "Marka: $this->marka,
-                Modelis: $this->modelis,
-                Gads: $this->gads";
+        Modelis: $this->modelis,
+        Gads: $this->gads";
     }
 }
 
-$auto1 = new Auto("BMW", "X5", 2020);
-$auto2 = new Auto("Audi", "A4", 2022);
+$auto1 = new Auto("Audi", "A4", 2000);
+$auto2 = new Auto("Volvo", "XV70", 2003);
 
-echo $auto1->showInfo();
-echo "<br>";
-echo $auto2->showInfo();
+echo $auto1->showinfo();
